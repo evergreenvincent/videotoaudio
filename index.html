@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC Video to MP3 Converter - Extract Audio from Videos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .app-intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .app-icon {
+            width: 180px;
+            height: 180px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #2575fc;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 117, 252, 0.6);
+        }
+
+        .features {
+            padding: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #6a11cb;
+        }
+
+        .screenshots {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+
+        .screenshot-container {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding: 2rem 0;
+        }
+
+        .screenshot {
+            min-width: 250px;
+            height: 500px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        .privacy {
+            padding: 4rem 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            margin: 1rem auto;
+        }
+
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .app-intro-text {
+                order: 2;
+            }
+
+            .app-icon-container {
+                order: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>VC Video to MP3 Converter</h1>
+        <p>Extract, Edit, and Convert Audio from Any Video</p>
+    </div>
+</header>
+
+<section class="container app-intro">
+    <div class="app-intro-text">
+        <h2>Transform Your Videos into High-Quality Audio Files!</h2>
+        <p>VC Video to MP3 Converter is the ultimate audio extraction tool that lets you easily convert video to audio, edit sound files, and create perfect ringtones - all in one powerful app!</p>
+        <a href="https://play.google.com/store/apps/details?id=com.vcvideomp3converter" class="download-btn">
+            <i class="fab fa-google-play"></i> Download on Google Play
+        </a>
+    </div>
+    <div class="app-icon-container">
+        <img src="appicon.png" alt="VC Video to MP3 Converter App Icon" class="app-icon">
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Powerful Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-audio"></i>
+                </div>
+                <h3>Video to Audio Extraction</h3>
+                <p>Extract audio from any video format (MP4, MKV, AVI, MOV) with high-quality preservation. Support for various audio output formats including MP3, WAV, AAC, and M4A.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Audio Trimming & Cutting</h3>
+                <p>Precisely cut and trim audio files with our intuitive timeline editor. Create perfect audio clips from longer recordings with visual waveform display.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>Audio Merging & Joining</h3>
+                <p>Seamlessly combine multiple audio files into one. Create custom playlists or audio compilations with adjustable transition effects.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3>Format Conversion</h3>
+                <p>Convert between popular audio formats (MP3, WAV, AAC, M4A, OGG). Customize bitrate, sample rate, and audio quality to match your needs.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <h3>Audio Mixing</h3>
+                <p>Mix multiple audio tracks together with adjustable volume levels. Add background music to voice recordings for professional-sounding mixes.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Ringtone Maker</h3>
+                <p>Turn any audio clip into a custom ringtone. Set as default ringtone, notification sound, or alarm with preview functionality.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="screenshots">
+    <div class="container">
+        <h2 class="section-title">App Screenshots</h2>
+        <div class="screenshot-container">
+            <img src="screenshot1.jpg" alt="Video to MP3 Conversion" class="screenshot">
+            <img src="screenshot2.jpg" alt="Audio Editing Interface" class="screenshot">
+            <img src="screenshot3.jpg" alt="Audio Trimming" class="screenshot">
+            <img src="screenshot4.jpg" alt="Format Conversion" class="screenshot">
+            <img src="screenshot5.jpg" alt="Ringtone Maker" class="screenshot">
+        </div>
+    </div>
+</section>
+
+<section class="privacy">
+    <div class="container">
+        <h2 class="section-title">Privacy Focused</h2>
+        <p>Your privacy matters to us! All audio extraction and editing happens directly on your device. We don't upload your files to any server, ensuring your personal content remains private.</p>
+
+        <h3>Why Choose Our App?</h3>
+        <ul>
+            <li><strong>User-Friendly Interface:</strong> Simple and intuitive design for both beginners and professionals</li>
+            <li><strong>Fast Processing:</strong> Extract audio and edit files in seconds</li>
+            <li><strong>No Quality Loss:</strong> Maintain original audio quality throughout the process</li>
+            <li><strong>No Internet Required:</strong> Process all files offline for complete privacy</li>
+            <li><strong>Small App Size:</strong> Doesn't take up valuable storage space</li>
+            <li><strong>Regular Updates:</strong> New features and improvements based on user feedback</li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.vcvideomp3converter" class="download-btn">
+                <i class="fab fa-google-play"></i> Download Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2023 VC Video to MP3 Converter. All rights reserved.</p>
+        <p>
+            <a href="privacy.html" style="color: white; margin: 0 10px;">Privacy Policy</a>
+            <a href="terms.html" style="color: white; margin: 0 10px;">Terms of Service</a>
+            <a href="contact.html" style="color: white; margin: 0 10px;">Contact Us</a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>
